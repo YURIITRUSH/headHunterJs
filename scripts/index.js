@@ -60,11 +60,8 @@ cityRegionList.addEventListener('click', (event) => {
         city.classList.remove('city_active');
     }
 });
-cityClose.addEventListener('click', (event) => {
-    const target = event.target;
-    if (target.classList.contains('city__close')){
-        city.classList.remove('city_active');
-    }
+cityClose.addEventListener('click', () => {
+    city.classList.remove('city_active');
 });
 
 // Модальное окно
